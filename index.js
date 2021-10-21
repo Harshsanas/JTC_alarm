@@ -24,6 +24,8 @@ function Timeclock() {
     playBeep();
   }
 }
+
+//for alarm set
 function setAlarmTime() {
   var timeString = String(document.getElementById("alarmTimeSelect").value);
   allHour = timeString.charAt(0) + timeString.charAt(1);
@@ -31,6 +33,8 @@ function setAlarmTime() {
   document.getElementById("alarm").innerHTML =
     "Alarm: " + allHour + ":" + allMinute;
 }
+
+//funtionality for snoozing for every 5 minute 
 function snooze() {
   if (allMinute != "" || allHour != "") {
     var snoozeMinute = 5;
@@ -53,12 +57,17 @@ function snooze() {
   }
 }
 
+// delete alarm
 function deleteAlarm(){
 
 }
+
+// playing music while alarm
 function playBeep() {
   var audio = new Audio("./music.mp3");
   audio.play();
 }
 Timeclock();
+
+//time interval for 1 sec
 setInterval(Timeclock, 1000);

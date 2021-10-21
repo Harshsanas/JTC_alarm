@@ -1,0 +1,43 @@
+body {
+    margin-top: 160px;
+    font-family: sans-serif;
+    color: #49018c;
+    background-color: whitesmoke;
+  text-align: center;
+}
+h1 {
+    font-size: 50px;
+    color: #49018c;
+}
+span {
+    font-size: 28px;
+}
+#setAlarm {
+    font-size: 24px;
+    color: #49018c;
+    border: 1px solid #49018c;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#setAlrm:hover {
+    cursor: pointer;
+}
+#snoozeAlarm {
+    font-size: 24px;
+    color: #49018c;
+    border: 1px solid #49018c;
+    border-radius: 4px;
+}
+#snoozeAlarm:hover {
+    cursor: pointer;
+}
+#setAlarm:active {
+    color: #49018c;
+    outline: none;
+}
+#alarmTimeSelect {
+    font-size: 24px;
+        color: #49018c;
+        border: 1px solid #49018c;
+        border-radius: 4px;
+    }
